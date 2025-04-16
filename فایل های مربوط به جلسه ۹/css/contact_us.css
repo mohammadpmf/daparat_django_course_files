@@ -1,0 +1,59 @@
+div.main{
+    display: grid;
+    grid-template-columns: 25% 15% 10% 50%;
+}
+
+div.main div{
+    margin: 16px 32px;
+}
+
+form label{
+    display: inline-block;
+    width: 100px;
+    margin: 4px 16px;
+}
+
+form input{
+    display: inline-block;
+    width: 250px;
+    transition: 400ms;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+
+form textarea{
+    resize: none;
+    border-radius: 16px;
+    transition: 400ms;
+    padding: 8px;
+    margin-top: 12px;
+}
+
+form input:focus{
+    outline: red 1px solid;
+    border: red 2px solid;
+}
+
+form textarea:focus{
+    outline: red 1px solid;
+    border: red 1px solid;
+}
+
+form button.submit{
+    background-color: rgb(18, 231, 231);
+    width: 128px;
+    height: 64px;
+    border-radius: 16px;
+    transition: 400ms;
+    border: none;
+    margin-right: 16px;
+    font-size: 1.2em;
+}
+form button.submit:hover{
+    background-color: rgb(17, 118, 149);
+}
+
+div.form{
+    grid-column: 4;
+}

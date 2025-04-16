@@ -1,0 +1,60 @@
+div.main{
+    display: flex;
+    justify-content: space-around;
+    width: 98vw;
+    margin-bottom: 32px;
+}
+
+div.main div{
+    width: 45vw;
+}
+
+div.main div.left img{
+    width: 45vw;
+    height: 45vw;
+}
+
+h2{
+    line-height: 64px;
+}
+
+form.order_form{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    row-gap: 8px;
+}
+
+input[type="submit"]{
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 16px;
+    transition: 400ms;
+    font-size: 1.6em;
+    grid-column: 2;
+    width: 128px;
+    margin: auto;
+    margin-top: 28px;
+}
+
+input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+input[type="email"]{
+    direction: ltr;
+}
+
+input[type="tel"]{
+    text-align: center;
+}
+
+input[type="number"]{
+    text-align: center;
+}

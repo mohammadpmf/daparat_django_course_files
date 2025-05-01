@@ -1,0 +1,52 @@
+div.main{
+    display: flex;
+    justify-content: space-around;
+    width: 98vw;
+    margin-bottom: 32px;
+}
+
+div.main div{
+    width: 45vw;
+}
+
+div.main div.left img{
+    width: 45vw;
+    height: 45vw;
+}
+
+div.main div.left input{
+    display: flex;
+    margin: auto;
+    border: none;
+    background-color: aqua;
+    padding: 8px 32px;
+    border-radius: 16px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 400ms;
+}
+
+div.main div.left input:hover{
+    background-color: rgb(41, 138, 138);
+}
+
+p{
+    line-height: 36px;
+}
+
+p.p_price{
+    color: brown;
+    text-decoration: line-through;
+    font-size: 1.4em;
+    text-align: end;
+    font-weight: bold;
+}
+p.price{
+    font-size: 1.4em;
+    text-align: end;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}

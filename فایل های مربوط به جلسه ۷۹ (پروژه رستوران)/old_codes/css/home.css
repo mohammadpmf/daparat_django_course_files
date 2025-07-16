@@ -1,0 +1,220 @@
+#background-image{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+    opacity: 0.35;
+}
+body>h1{
+    text-align: center;
+    text-shadow: purple 1px 1px, yellowgreen -1px 1px;
+}
+
+body>h2{
+    margin: 4px 32px;
+}
+body>p{
+    margin: 4px 24px;
+    font-size: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-margin: 100px;
+    scroll-padding: 100px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: golzar;
+}
+*::placeholder{
+    font-family: golzar;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color: #bd128f;
+}
+
+nav>ul>li {
+  float: right;
+}
+nav>ul>li:nth-last-child(-n+2){
+    float: left;
+}
+
+nav>ul>li a {
+  display: block;
+  color: rgb(42, 0, 74);
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+  text-shadow: skyblue 1px 1px;
+  font-size: 1.2em;
+}
+
+nav>ul>li a:hover {
+  background-color: #6e0061;
+}
+
+div.pictures{
+    display: flex;
+    width: 98vw;
+    overflow: hidden;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    row-gap: 20px;
+}
+
+div.pictures img{
+    width: 28vw;
+    height: 25vw;
+    overflow: hidden;
+    border-radius: 50px;
+    box-sizing: border-box;
+    transition: border 1s, border-radius 1s, opacity 1s, transform 0.5s;
+    border: 5px solid rgba(23, 204, 245, 0.9);
+}
+
+div.pictures img:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+    border-radius: 30px;
+    border: 6px solid rgba(23, 204, 245, 0.9);
+}
+body>hr{
+    margin: 10px 20px;
+}
+footer{
+    padding: 8px 32px;
+}
+footer>span{
+    font-size: 2.4em;
+}
+footer>div.payin{
+    margin: 0 64px;
+    display: flex;
+    justify-content: space-around;
+}
+footer>div.payin div.hamkaran, footer>div.payin div.ejtemaee{
+    width: 40%;
+}
+footer>div.payin div.hamkaran span, footer>div.payin div.ejtemaee span{
+    font-size: 1.8em;
+}
+footer>div.payin hr{
+    margin-left: 80px;
+}
+
+footer>div.payin div.hamkaran ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+footer>div.payin div.hamkaran li{
+    margin: 4px 12px;
+}
+
+footer>div.payin div.hamkaran a{
+    font-size: 1.15em;
+    text-decoration: none;
+    color: brown;
+    transition: font-size 0.5s, color 0.5s;
+}
+footer>div.payin div.hamkaran a:hover{
+    font-size: 1.3em;
+    color: purple;
+}
+footer>div.payin div.ejtemaee ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer>div.payin div.ejtemaee ul li>a>img{
+    margin-left: 32px;
+    width: 48px;
+    height: 48px;
+    filter:grayscale(100%);
+    transition: filter 300ms;
+}
+
+footer>div.payin div.ejtemaee ul li>a>img:hover{
+    filter:grayscale(0%);
+    /* animation: shake 0.8s infinite; */
+    /* animation: shake2 1s 1; */
+    animation: shake 0.6s infinite, shake2 1s 1;
+}
+
+
+
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes shake2 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes shake3 {
+    0% { transform: translate(3px, 0px) }
+    33% { transform: translate(-3px, 0px) }
+    66% { transform: translate(-3px, 0px) }
+    100% { transform: translate(3px, 0px) }
+}
+  
+nav>ul>li>a:hover {
+    animation: shake3 0.8s;
+    animation-iteration-count:  infinite;
+}
+
+#powered-by{
+    text-align: center;
+    font-family: handwriting, dance, Arial, Helvetica, sans-serif;
+}
+
+#up-arrow{
+    position: sticky;
+    top: 10px;
+    bottom: 10px;
+    right: 1vw;
+    background-color: orange;
+    padding: 10px 16px;
+    border: 4px groove orange;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+#up-arrow:hover{
+    opacity: 1;
+}
+#up-arrow:active{
+    border: 4px ridge orange;
+}

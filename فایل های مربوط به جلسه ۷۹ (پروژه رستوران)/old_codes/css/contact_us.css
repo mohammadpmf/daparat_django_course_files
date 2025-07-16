@@ -1,0 +1,61 @@
+div.info{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2cm;
+}
+
+div.address{
+    width: 20%;
+    text-align: justify;
+}
+
+div.telephones{
+    line-height: 0.5cm;
+    width: 20%;
+    text-align: justify;
+}
+
+div.send_mail{
+    width: 45%;
+    position: relative;
+    line-height: 0.95cm;
+    font-size: 24px;
+}
+div.send_mail label{
+    font-size: 24px;
+}
+
+div.send_mail input[type=text], div.send_mail input[type=email]{
+    padding: 4px 12px;
+    border-radius: 2px;
+    transition: border 0.5s;
+    outline: none;
+}
+div.send_mail input[type=text]:focus, div.send_mail input[type=email]:focus{
+    border: 2px solid red;
+}
+div.send_mail textarea{
+    margin-right: 20px;
+    padding: 4px 12px;
+    border-radius: 10px;
+    transition: border 0.3s;
+    box-sizing: border-box;
+    outline: none;
+}
+div.send_mail textarea:focus{
+    border: 6px solid red;
+}
+
+div.send_mail input[type='submit']{
+    margin-right: 30px;
+    padding: 0 28px;
+    border-radius: 24px;
+    font-size: 24px;
+    background-color: cyan;
+    border: 0px;
+    font-family: golzar;
+    transition: background-color 0.3s;
+}
+div.send_mail input[type='submit']:hover{
+    background-color: darkcyan;
+}

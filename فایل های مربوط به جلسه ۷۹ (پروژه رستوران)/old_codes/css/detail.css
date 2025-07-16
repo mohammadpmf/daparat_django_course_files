@@ -1,0 +1,76 @@
+div.big-picture{
+    display: flex;
+    justify-content: space-between;
+    width: 98vw;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+div.description{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    width: 45vw;
+    line-height: 1.5cm;
+}
+div.description p{
+    margin-right: 32px;
+    font-size: 2em;
+}
+div.description ul li{
+    list-style-type: none;
+    display: inline;
+}
+div.description ul li::after{
+    content: " - ";    
+}
+div.description ul li:last-child::after{
+    content: "";    
+}
+div.description span{
+    margin-right: 32px;
+    font-size: 1em;
+    text-align: right;
+}
+div.description span.price{
+    align-self: flex-end;
+    font-size: 2em;
+    justify-self: flex-end;
+    color: rgb(184, 4, 4);
+    text-decoration: line-through;
+}
+div.description span.price-new{
+    align-self: flex-end;
+    font-size: 2em;
+    justify-self: flex-end;
+}
+div.description span.price-order{
+    align-self: flex-start;
+    font-size: 2em;
+}
+
+div.big-picture img{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: 40vw;
+}
+
+div.big-picture input[type='submit']{
+    margin: 6px 30px;
+    padding: 0 28px;
+    background-color: cyan;
+    border-radius: 24px;
+    font-size: 24px;
+    border: 0px;
+    font-family: golzar;
+    transition: background-color 0.3s;
+}
+div.big-picture input[type='submit']:hover{
+    background-color: darkcyan;
+}
+

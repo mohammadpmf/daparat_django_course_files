@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رستوران فلاح</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="icon" type="image/x-icon" href="imgs/ghahverh/6.jpg">
+
+</head>
+<body>
+    <img class="background" src="imgs/ghahverh/6.jpg" alt="">
+    <h1 class="title">به رستوران فلاح خوش آمدید</h1>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="breakfast.html">منوی صبحانه</a></li>
+            <li><a href="lunch.html">منوی ناهار</a></li>
+            <li><a href="dinner.html">منوی شام</a></li>
+            <li><a href="fast_food.html">منوی فست فود</a></li>
+            <li><a href="persian.html">منوی غذای ایرانی</a></li>
+            <li><a href="drinks.html">نوشیدنی</a></li>
+            <div>
+                <ul>
+                    <li><a href="about_us.html">درباره ما</a></li>
+                    <li><a href="contact_us.html">تماس با ما</a></li>
+                </ul>
+            </div>
+        </ul>
+    </nav>
+    <hr>
+    <div class="main">
+        <div class="right">
+            <h2>نام: پیتزا املت و نعنا</h2>
+            <h2>قیمت: 112000 تومان</h2>
+            <form action="order_successful.html" class="order_form">
+                <label for="name">نام: </label>
+                <input type="text" name="name" required placeholder="نام خود را وارد کنید">
+                <label for="email">ایمیل: </label>
+                <input type="email" name="email" placeholder="ex: mohammad@gmail.com">
+                <label for="phone">شماره تماس: </label>
+                <input type="tel" name="phone" required placeholder="ex: 09123456789" pattern="09[0-9]{9}" maxlength="11" minlength="11">
+                <label for="amount">تعداد: </label>
+                <input type="number" name="amount" min="1" max="10" required placeholder="1" value="1">
+                <input type="submit" value="سفارش">
+            </form>
+        </div>
+        <div class="left">
+            <img src="imgs/ghahverh/6.jpg" alt="coffee">
+        </div>
+    </div>
+    <hr>
+    <h2>رستوران فلاح</h2>
+    <footer>
+        <div class="right">
+            <h3>لیست همکاران</h3>
+            <hr class="footer">
+            <a href="">رستوران محمود</a>
+            <a href="">رستوران زیبا</a>
+            <a href="">رستوران تیراژه</a>
+            <a href="">رستوران رفتاری</a>
+            <a href="">رستوران جهانگیر</a>
+            <a href="">رستوران کشمیری</a>
+        </div>
+        <div class="left">
+            <h3>ما را در شبکه های اجتماعی دنبال کنید</h3>
+            <hr class="footer">
+            <a href="#"><img class="footer_image" src="imgs/soicial media/aparat.png" alt=""></a>
+            <a href="#"><img class="footer_image" src="imgs/soicial media/youtube.png" alt=""></a>
+            <a href="#"><img class="footer_image" src="imgs/soicial media/facebook.png" alt=""></a>
+            <a href="#"><img class="footer_image" src="imgs/soicial media/instagram.png" alt=""></a>
+            <a href="#"><img class="footer_image" src="imgs/soicial media/twitter.png" alt=""></a>
+            <a href="#"><img class="footer_image" src="imgs/soicial media/telegram.png" alt=""></a>
+            <a href="#"><img class="footer_image" src="imgs/soicial media/linkedin.png" alt=""></a>
+            <a href="#"><img class="footer_image" src="imgs/soicial media/whatsapp.png" alt=""></a>
+        </div>
+    </footer>
+    <a class="up_arrow" href="#"><i class="fa fa-arrow-up"></i></a>
+    <hr>
+    <p class="last_p">💙Powered By: Mohammad Pourmohammadi Fallah</p>
+</body>
+</html>
